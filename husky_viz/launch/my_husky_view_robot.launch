@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="/use_sim_time" value="true"/>
+  <!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find husky_viz)/rviz/my_localization_husky.rviz" output="screen"/> -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find husky_viz)/rviz/my_gmap_husky.rviz" output="screen"/> 
+</launch>
