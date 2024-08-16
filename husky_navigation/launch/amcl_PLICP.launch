@@ -5,7 +5,10 @@
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 
     <arg name="scan_topic" default="front/scan" />
-    <node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/husky_gmap_20240803_manual_b1_2.5map.yaml" />
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/husky_gmap_20240803_manual_b1_2.5map.yaml" /> 
+    <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/husky_gmap_20240803_manual_b1_5map.yaml" /> -->
+    <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/husky_gmap_20240803_manual_b1_1.25map.yaml" /> -->
+    <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/map_5_test1.yaml" />-->
     <node pkg="amcl" type="amcl" name="amcl" output="screen">
 
         <!-- <remap from="scan" to="front_scan"/> -->
@@ -95,6 +98,8 @@
         
     </node>
     
+    <node pkg="husky_navigation" type="gt_2D" name="gt_2D" output="screen"/>
+
     <!--<node pkg="rosbag" type="record" name="rosbag_record" args="-o /home/mingzhun/lab_localization/bag/20240720_loop_openloop_PLICP_20240705_test5_1map_ICP_use_1map_calid -a"/> -->
 
 </launch>
