@@ -26,6 +26,11 @@
   <run_depend>navfn</run_depend>
   <run_depend>base_local_planner</run_depend>
   <run_depend>dwa_local_planner</run_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nav_msgs</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>nav_msgs</run_depend>
 
   <export>
   </export>
