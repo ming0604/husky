@@ -11,12 +11,16 @@
     <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/husky_gmap_20240804_test1_b1_1.25map.yaml" />-->
     <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/husky_gmap_20240804_test1_b1_2.5map.yaml" /> -->
     <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/husky_gmap_20240804_test1_b1_5map.yaml" />-->
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/map_10_test1.yaml" />
     <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/map_5_test1.yaml" />-->
     <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/map_2.5_test1.yaml" /> -->
     <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/map_1.25_test1.yaml" />-->
-    <node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/b1_closed_d_ideal_map_5.yaml" /> 
+    <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/b1_closed_d_ideal_map_10.yaml" /> -->
+    <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/b1_closed_d_ideal_map_5.yaml" /> -->
     <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/b1_closed_d_ideal_map_2.5.yaml" />-->
     <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/b1_closed_d_ideal_map_1.25.yaml" /> -->
+    <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/b1_closed_d_ideal_map_1.yaml" /> -->
+    <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find husky_navigation)/maps/map_2.5_test2.yaml" /> -->
     <node pkg="amcl" type="amcl" name="amcl" output="screen">
 
         <!-- <remap from="scan" to="front_scan"/> -->
@@ -107,7 +111,6 @@
     </node>
     
     <node pkg="husky_navigation" type="gt_2D" name="gt_2D" output="screen"/>
-    <!---->
-    <node pkg="rosbag" type="record" name="rosbag_record" args="-o /home/mingzhun/lab_localization/bag/20240901_openloop_PLICP_b1_closed_loop_1_b1_closed_d_ideal_map_5 -a"/> 
-
+    
+    <!--<node pkg="rosbag" type="record" name="rosbag_record" args="-o /home/mingzhun/lab_localization/bag/20240914_openloop_PLICP_b1_closed_loop_test2_b1_closed_d_ideal_map_10 -a"/> -->
 </launch>
