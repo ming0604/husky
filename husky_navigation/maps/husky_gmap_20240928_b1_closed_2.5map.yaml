@@ -1,0 +1,7 @@
+image: /home/mingzhun/lab_localization/src/husky/husky_navigation/maps/husky_gmap_20240928_b1_closed_2.5map.pgm
+resolution: 0.025000
+origin: [-20.000000, -20.000000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
