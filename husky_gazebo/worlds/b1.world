@@ -665,6 +665,7 @@
       </light>
     </state>
     <model name='unit_box'>
+      <static>true</static>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -866,6 +867,7 @@
       </camera>
     </gui>
     <model name='pillar'>
+      <static>true</static>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -968,7 +970,7 @@
       <pose>2.4874 2.50424 0.5 0 -0 0</pose>
     </model>
     <plugin name='gazebo_occupancy_map' filename='libgazebo_2Dmap_plugin.so'>
-    <map_resolution>0.025</map_resolution> <!-- in meters, optional, default 0.1 -->
+    <map_resolution>0.1</map_resolution> <!-- in meters, optional, default 0.1 -->
     <map_height>0.4310286998878532</map_height>         <!-- in meters, optional, default 0.3 -->
     <map_size_x>40</map_size_x>          <!-- in meters, optional, default 10 -->
     <map_size_y>40</map_size_y>          <!-- in meters, optional, default 10 -->
